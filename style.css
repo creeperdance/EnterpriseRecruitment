@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/*设置通用字体*/
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	background-color: #f8f8f8;
+}
+
+.navbar-header img{
+	
+	max-width: 80px;
+}
+#myCarousel img {
+	margin: 0 auto;
+}
+
+.carousel-inner {
+	max-height: 500px;
+}
+
+.pic1 {
+	background-color: #cfd2d8;
+}
+
+.pic2 {
+	background-color: #ebece7;
+}
+
+.pic3 {
+	background-color: #4d5d57;
+}
+.joinus,#footer{
+	margin: 10px auto;
+	text-align: center;
+	color: #af2956; 
+	font-size:28px; 
+	font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+.joinus span{
+	color: #3463a5;  
+	font-weight: bold;
+}
+/* 小屏幕（平板，大于等于 768px） */
+
+@media (min-width: 768px) {
+	.carousel-caption {
+		bottom: 150px;
+	}
+	.joinus{
+		font-size: 36px;
+	}
+}
+
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+
+@media (min-width: 992px) {
+	.carousel-caption {
+		bottom: 250px;
+	}
+	.joinus{
+		font-size: 42px;
+	}
+}
+
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+
+@media (min-width: 1200px) {
+	.carousel-caption {
+		bottom: 300px;
+	}
+	.joinus{
+		font-size: 50px;
+	}
+}
