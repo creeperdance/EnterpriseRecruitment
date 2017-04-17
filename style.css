@@ -1,91 +1,170 @@
 ﻿@charset "utf-8";
 
+/*首页部分及通用：*/
+
+
 /*设置通用字体*/
 
 body {
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Helvetica Neue', PingFangSC-Light, 'Microsoft Yahei', sans-serif;
 	background-color: #ebebeb;
 }
-.navbar-header img{	
+
+.navbar-header img {
 	max-width: 80px;
 }
+
 #myCarousel img {
 	margin: 0 auto;
 }
+
 .carousel-inner {
 	max-height: 500px;
 }
+
 .pic1 {
 	background-color: #cfd2d8;
 }
+
 .pic2 {
 	background-color: #ebece7;
 }
+
 .pic3 {
 	background-color: #4d5d57;
 }
-.joinus,#footer{
+
+.joinus,
+#footer {
 	margin: 10px auto;
-	text-align:center;
-	color: #af2956; 
-	font-size:28px; 
-}
-.joinus span{
-	color: #3463a5;  
-	font-weight: bold;
-}
-.joinus p{
-	color:#666;
-	font-size:18px;
+	text-align: center;
+	color: #af2956;
+	font-size: 28px;
 }
 
-.introduce,.news{
+.joinus span {
+	color: #3463a5;
+	font-weight: bold;
+}
+
+.joinus p {
+	color: #666;
+	font-size: 18px;
+	display: inlie;
+}
+
+.introduce,
+.news {
 	margin-top: 30px auto;
 	text-align: center;
 }
-.col{
+
+.col {
 	margin: 0 auto;
 }
-.info h2{
+
+.info h2 {
 	color: #af2956;
 }
-.news h1{
+
+.news h1 {
 	margin-top: 50px;
 	color: #3463a5;
 }
-.news img{
+
+.news img {
 	position: relative;
 	left: -20px;
 	width: 320px;
 	margin-top: 45px;
 	opacity: 0.9;
 }
-.news span{
+
+.news span {
 	position: absolute;
-    margin-left: -80px;
-    top: 50%;
-    left: 50%;
-    font-size: 32px;
-    color: floralwhite;
-    text-align:center;
-    z-index: 1;
-    letter-spacing: 5px;
+	margin-left: -80px;
+	top: 50%;
+	left: 50%;
+	font-size: 32px;
+	color: floralwhite;
+	text-align: center;
+	z-index: 1;
+	letter-spacing: 5px;
 }
+
 .news a:hover img {
 	opacity: 1.0;
 }
-#footer{
+
+#footer {
 	margin-top: 100px;
 }
-#footer span{
-	color:#3463a5 ;
+
+#footer span {
+	color: #3463a5;
 }
-#footer p{
+
+#footer p {
 	text-align: center;
-    font-size: 12px;
-    color: #A8A8A8;
+	font-size: 12px;
+	color: #A8A8A8;
+}
+
+
+/*招聘中心：*/
+
+.banner {
+	position: relative;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover!important;
+	position: relative;
+	height: 250px;
+	/* 以上属性的缩放方式
+   * background: url(background-photo.jpg) center center cover no-repeat fixed;
+   */
+}
+.banner .info{
+	position:absolute;
+	left: 5%;
+	top: 45%;
+	z-index:999;
+	letter-spacing: 3px;
+}
+.banner .info h2{
+	font-size: 20px;
+	color:#00a7ad;
+	animation: firstMove 1s ease-in; 
+    -webkit-animation: firstMove 1s ease-in;
+    -moz-animation: firstMove 1s ease-in;
+    -o-animation: firstMove 1s ease-in;
+}
+.banner .info p{
+	margin-top: 10px;
+	font-size: 18px;
+	color:#ec923c;
+	animation: firstMove 2s ease-in; 
+    -webkit-animation: firstMove 2s ease-in;
+    -moz-animation: firstMove 2s ease-in;
+    -o-animation: firstMove 2s ease-in;
+}
+/*CSS3动画效果*/
+@keyframes firstMove {
+	0% {
+		opacity: 0;	
+	}
+	50% {
+		transform: translateX(-40px);
+		opacity: 0;	
+	}
+	100% {
+		transform: translateX(0px);
+		opacity: 1;
+	}
 }
 /*媒体查询*/
+
 
 /* 小屏幕（平板，大于等于 768px） */
 
@@ -93,19 +172,32 @@ body {
 	.carousel-caption {
 		bottom: 150px;
 	}
-	.joinus{
+	.joinus {
 		font-size: 35px;
 	}
-	.joinus span{
+	.joinus span {
 		font-size: 40px;
 	}
-	.joinus p{
+	.joinus p {
 		font-size: 22px;
 	}
-	.news img{
+	.news img {
 		width: 360px;
 	}
+	.banner {
+		height: 580px;
+	}
+	.banner .info h2{
+		font-weight: bold;
+		font-size: 28px;
+	}
+	.banner .info p{
+		font-weight: bold;
+		margin-top: 30px;
+		font-size: 24px;
+	}
 }
+
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
 
@@ -113,20 +205,21 @@ body {
 	.carousel-caption {
 		bottom: 250px;
 	}
-	.joinus{
+	.joinus {
 		font-size: 40px;
 	}
-	.joinus span{
+	.joinus span {
 		font-size: 45px;
 	}
-	.joinus p{
+	.joinus p {
 		font-size: 24px;
 	}
-	.news img{
-		width: 320px;
+	.news img {	.banner .info h2{
+		font-size: 36px;
 	}
-}
-
+	.banner .info p{
+		font-size: 30px;
+	}
 
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
 
@@ -134,16 +227,16 @@ body {
 	.carousel-caption {
 		bottom: 300px;
 	}
-		.joinus{
+	.joinus {
 		font-size: 46px;
 	}
-	.joinus span{
+	.joinus span {
 		font-size: 52px;
 	}
-	.joinus p{
+	.joinus p {
 		font-size: 30px;
 	}
-	.news img{
+	.news img {
 		width: 360px;
 	}
 }
