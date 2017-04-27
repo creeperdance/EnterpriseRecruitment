@@ -1,18 +1,19 @@
-﻿<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="zh-CN">
 	<head>
-		<meta charset="utf-8" />
-		<title>企业招聘网站</title>
-
+		<meta charset="UTF-8">
 		<!-- 移动优先，自适应手机屏幕-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--解决bootstrap不支持IE兼容模式问题，为了让IE浏览器运行最新的渲染模式-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>企业招聘网</title>
 		<!--引入bootstrap css文件-->
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
-
+		<script src="bootstrap/respond.min.js"></script>
+		<script src="bootstrap/html5.js"></script>
+		<!--<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
 	</head>
-
 	<body>
 		<!--响应式导航栏-->
 		<nav class="navbar navbar-default navbar-fixed-top">
@@ -41,7 +42,7 @@
 			</div>
 		</nav>
 
-		<div class="banner" style="background-image: url(img/young.jpg);">
+		<div class="banner" style="background-image: url(img/banner.jpg);">
 			<div class="info">
 				<h2>2017春季实习生招聘</h2>
 				<p>让梦想走向舞台</p>
@@ -120,8 +121,8 @@
 		</footer>
 
 		<!--引入jquery-->
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="bootstrap/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
 
 		<script type="text/javascript">
 			$('#myCarousel').carousel({

@@ -1,4 +1,4 @@
-﻿	@charset "utf-8";
+	@charset "utf-8";
 	/*首页部分及通用：*/
 	/*设置通用样式：*/
 	
@@ -32,7 +32,6 @@
 		border: 1px solid #e5e5e5;
 		box-shadow: 0 0 2px #ddd;
 		border-radius: 4px;
-		
 	}
 	/*内盒子边框阴影效果：*/
 	
@@ -70,7 +69,7 @@
 	
 	.banner .info h2 {
 		font-size: 20px;
-		color: #043e92;
+		color: white;
 		animation: firstMove 1s ease-in;
 		-webkit-animation: firstMove 1s ease-in;
 		-moz-animation: firstMove 1s ease-in;
@@ -80,7 +79,7 @@
 	.banner .info p {
 		margin-top: 10px;
 		font-size: 18px;
-		color: #af2956;
+		color: white;
 		/*兼容浏览器*/
 		animation: firstMove 2s ease-in;
 		-webkit-animation: firstMove 2s ease-in;
@@ -158,11 +157,12 @@
 	}
 	
 	.news img {
-		margin-top: 50px;
+		margin-top: 20px;
 		position: relative;
 		margin-left: -10px;
 		width: 320px;
 		opacity: 0.9;
+		filter: alpha(Opacity=90);
 	}
 	
 	.news span {
@@ -236,7 +236,7 @@
 		border-radius: 2px;
 		-webkit-border-radius: 2px;
 		-moz-border-radius: 2px;
-		-o-border-radius:2px;
+		-o-border-radius: 2px;
 	}
 	
 	.concern p {
@@ -343,7 +343,8 @@
 		font-weight: 400;
 		color: rgb(102, 102, 102);
 	}
-	.line{
+	
+	.line {
 		margin-top: 100px;
 		border-bottom: 1px dashed #eee;
 	}
@@ -355,24 +356,29 @@
 		text-align: center;
 		margin-bottom: 120px;
 	}
+	
 	.callways h2 {
 		margin: 30px auto;
 		color: #043e92;
 	}
-	.companyshow{
+	
+	.companyshow {
 		margin: 30px auto;
 		padding: 0;
 	}
+	
 	.companyshow .col {
 		padding: 0;
 	}
+	
 	.companyshow img {
 		max-width: 320px;
 		border-radius: 4px;
 		-webkit-border-radius: 4px;
 		-moz-border-radius: 4px;
-		-o-border-radius:4px;
+		-o-border-radius: 4px;
 	}
+	
 	.companyshow .col span {
 		padding: 0;
 		width: 320px;
@@ -397,9 +403,6 @@
 		.joinus p {
 			font-size: 22px;
 		}
-		.news img {
-			width: 360px;
-		}
 		.banner {
 			height: 580px;
 		}
@@ -436,9 +439,6 @@
 		.joinus p {
 			font-size: 22px;
 		}
-		.news img {
-			width: 320px;
-		}
 		.banner {
 			height: 580px;
 		}
@@ -458,6 +458,9 @@
 			height: 45px;
 			line-height: 45px;
 		}
+		.news {
+			width: 700px;
+		}
 	}
 	/* 中等屏幕（桌面显示器，大于等于 992px） */
 	
@@ -474,14 +477,14 @@
 		.joinus p {
 			font-size: 24px;
 		}
-		.news img {
-			width: 320px;
-		}
 		.banner .info h2 {
 			font-size: 36px;
 		}
 		.banner .info p {
 			font-size: 30px;
+		}
+		.news {
+			width: 1020px;
 		}
 	}
 	/* 大屏幕（大桌面显示器，大于等于 1200px） */
@@ -499,10 +502,8 @@
 		.joinus p {
 			font-size: 30px;
 		}
-		.news img {
-			width: 360px;
-		}
 		.callways {
 			text-align: left;
 		}
+		
 	}
